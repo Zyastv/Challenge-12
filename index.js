@@ -163,7 +163,7 @@ const viewDepartments = () => {
 }
 
 const viewEmployees = () => {
-  db.query('SELECT * FROM departments', (err, employees) => {
+  db.query('SELECT * FROM Employees', (err, employees) => {
     if(err) {console.log(err)}
     console.table(employees)
   })
@@ -172,7 +172,7 @@ const viewEmployees = () => {
 }
 
 const viewRoles= () => {
-  db.query('SELECT * FROM departments', (err, roles) => {
+  db.query('SELECT * FROM roles', (err, roles) => {
     if(err) {console.log(err)}
     console.table(roles)
   })
